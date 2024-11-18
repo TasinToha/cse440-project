@@ -1,0 +1,5 @@
+# Ignore the rps directory
+rps/
+
+# Ignore the image-data directory
+image-data/
