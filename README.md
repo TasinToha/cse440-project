@@ -33,9 +33,32 @@ This project is developed as part of **CSE440: Artificial Intelligence** and imp
 
 ## Requirements
 - Python 3.7
+- Keras
+- Tensorflow
+- OpenCV
 
-Secondly, Install the dependencies
+Install the dependencies
 
 ```sh
 $ pip install -r requirements.txt
+```
+
+Gather Images for each gesture
+```sh
+$ python3 gather_images.py rock 500
+```
+
+4. Train the model
+```sh
+$ python3 train.py
+```
+
+5. Test the model on some images
+```sh
+$ python3 test.py <path_of_test_image>
+```
+
+6. Play the game with your computer
+```sh
+$ python3 play.py
 ```
