@@ -2,7 +2,10 @@
 rps/
 
 # Ignore the image-data directory
-image-data/
+image_data/
 
 # macOS system files
 .DS_Store
+
+# Git file
+.git

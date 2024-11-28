@@ -4,8 +4,10 @@
 
 An AI to play the Rock Paper Scissors game
 
-First install python version 3.7
-Second, Install the dependencies
+## Requirements
+- Python 3.7
+
+Secondly, Install the dependencies
 
 ```sh
 $ pip install -r requirements.txt
