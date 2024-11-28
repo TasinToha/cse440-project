@@ -30,22 +30,6 @@ This project is developed as part of **CSE440: Artificial Intelligence** and imp
 
 ---
 
-## Project Structure
-
-```plaintext
-.
-├── images/                         # Dataset of hand gestures
-│   ├── rock/                       # Images of "rock" gestures
-│   ├── paper/                      # Images of "paper" gestures
-│   ├── scissors/                   # Images of "scissors" gestures
-│   └── none/                       # Images with no hand gesture
-├── gather_images.py                # Script to capture hand gesture images
-├── train.py                        # Script to train the SqueezeNet model
-├── test.py                         # Script to test the model and debug predictions
-├── play.py                         # Script to play Rock Paper Scissors with the AI
-├── rock-paper-scissors-model.h5    # Trained model file
-├── requirements.txt                # Python dependencies
-└── README.md                       # Project documentation
 
 ## Requirements
 - Python 3.7
