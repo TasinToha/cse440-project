@@ -1,31 +1,22 @@
-# cse440-project
+# CSE440 AI Project: Rock Paper Scissors Game
 
-# Rock Paper Scissors Game
-
-This project is developed as part of **CSE440: Artificial Intelligence** and implements a Rock Paper Scissors game where the user can play against an AI. The AI detects and recognizes the user's hand gesture using deep learning with a convolutional neural network called **SqueezeNet**.
-
-## Features
-- **Hand Gesture Detection**: The game captures the user's move (rock, paper, or scissors) using a webcam.
-- **Deep Learning Model**: The AI model is built using SqueezeNet, a lightweight and efficient CNN.
-- **Real-Time Prediction**: The user's move is recognized in real-time and compared against the AI's randomly generated move.
-- **Interactive Gameplay**: Provides feedback to the user about the winner of each round.
+This project is part of **CSE440: Artificial Intelligence** and showcases a Rock Paper Scissors game where a user plays against an AI. The AI uses deep learning to recognize hand gestures in real time.
 
 ---
 
-## How It Works
+## Features  
+- **Gesture Recognition**: Detects hand gestures (rock, paper, scissors) via webcam.  
+- **AI Model**: Uses a lightweight CNN model called **SqueezeNet** for accurate recognition.  
+- **Real-Time Gameplay**: Recognizes user moves instantly and determines the winner.  
+- **Interactive Experience**: Provides immediate feedback on each round.  
 
-1. **Data Collection**:
-   - Hand gesture images for "rock," "paper," "scissors," and "none" are captured using a webcam.
-   - Collected images are stored in the `images/` directory, organized by class labels.
+---
 
-2. **Model Training**:
-   - A SqueezeNet-based CNN model is trained on the collected images.
-   - The model classifies the user's hand gesture into one of four categories: "rock," "paper," "scissors," or "none."
-   - Training is implemented in `train.py`.
+## How It Works  
 
-3. **Game Logic**:
-   - The game compares the user's move (detected by the model) with the AI's random move.
-   - Displays the winner of each round.
+1. **Image Collection**: Capture hand gesture images ("rock," "paper," "scissors," and "none") using a webcam.  
+2. **AI Model Training**: Train a SqueezeNet model to classify gestures into four categories.  
+3. **Game Logic**: The AI compares the user’s gesture with its own random move and decides the winner.  
 
 
 ---
@@ -37,28 +28,38 @@ This project is developed as part of **CSE440: Artificial Intelligence** and imp
 - Tensorflow
 - OpenCV
 
-1. Install the dependencies
+
+---
+
+
+## Steps to Run  
+
+1. **Install Required Packages**:  
 
 ```sh
 $ pip install -r requirements.txt
 ```
 
-2. Gather Images for each gesture
+2. **Gather Images for each gesture**
+
 ```sh
 $ python3 gather_images.py rock 500
 ```
 
-3. Train the model
+3. **Train the model**
+
 ```sh
 $ python3 train.py
 ```
 
-4. Test the model on some images
+4. **Test the model on some images**
+
 ```sh
 $ python3 test.py <path_of_test_image>
 ```
 
-5. Play the game with your computer
+5. **Play the game with your computer**
+
 ```sh
 $ python3 play.py
 ```
